@@ -1,0 +1,141 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{tikz}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{xhfill}
+\usepackage{hyperref}
+
+\definecolor{Purple}{HTML}{5F3772}
+\newcommand\ruleafter[1]{#1~\xrfill[.7ex]{0.5pt}}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[{\color{Purple}\titlerule[2pt]}]
+
+\titleformat{\subsection}
+{\large\bfseries}
+{}
+{0em}
+{\color{Purple}\ruleafter}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}
+
+\titleformat{\paragraph}[runin]
+{\color{darkgray}\bf}
+{}
+{1em}
+{}
+
+\renewcommand{\maketitle}
+{
+  
+  \begin{minipage}[t]{0.66\textwidth}\vspace{-5pt}
+    {\huge\bfseries
+    \theauthor}
+
+    \vspace{.40em}
+
+    capassog97@gmail.com --- https://giuseppe.capass.org
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.33\textwidth}\vspace{-45pt}
+    \begin{tikzpicture} 
+      \clip (0,0) circle (2cm); 
+      \node [anchor=center] at (.1,0) {\includegraphics[width=12em] {./images/propic.jpg}};
+    \end{tikzpicture}
+  \end{minipage}
+
+}
+\begin{document}
+
+\title{Resume}
+
+\author{Giuseppe Capasso}
+\maketitle
+
+\section{Education}
+\subsection{University Federico II, Naples}
+\subsubsection{Master degree in Computer Engineering\hfill \textcolor{darkgray}{\small{2023-now}}}\\
+
+\paragraph{Curriculum} Hybrid curriculum in cybersecurity, embedded systems and computer networks
+\subsubsection{Bachelor degree in Computer Engineering\hfill \textcolor{darkgray}{\small{2017-2022}}}
+\paragraph{Optional courses} Multimedia Systems, Artificial Intelligence and Real Time Operating Systems 
+
+\subsection{Self learning}
+\subsubsection{Distributed systems} Attended distributed systems class from MiT. All exercises available in the portfolio
+\subsubsection{Neural Network and Deep Learning} Attended Neural Network and Deep Learning class held by Professor G. Buttazzo. Projects and exercises available in the portfolio
+
+\subsection{Cisco Netacad}
+\subsubsection{Cisco Devnet} Deep understanding of DevOps technologies, cybersecurity and infrastractures
+\subsubsection{Cisco CCENT} Basic understanding of Cisco IOS, Routing and Switching Essentials
+
+\section*{Work experience}
+\subsection{Gematica}
+\subsubsection{Software engineer\hfill \textcolor{darkgray}{\small{2022-2023}}}
+\begin{itemize}
+  \item Design and implemented air quality monitoring platform working with LoRaWAN and MQTT infrastructures
+  \item Managed internal Cisco networking infrastructure implementing WPA2/Enteriprise policies integrating Active Directory for employees and Packetfence for guest with a splash portal
+  \item Design and implemented a solution to analyze passenger flow in a metropolitan environment using Cisco WLC and SNMP traps
+\end{itemize}
+
+\subsection{Consorzio Clara}
+\subsubsection{Mentor@Cisco Networking Academy\hfill \textcolor{darkgray}{\small{2021-now}}}
+
+\begin{itemize}
+  \item Design and delivery of interactive laboratories for students on DevOps and Cybersecurity chapters of the Devnet Certification;
+  \item Support and mentoring during the challanges and planning phases of the Bootcamp;
+  \item Bridging companies/students during the final phase of the project works;
+\end{itemize}
+
+\subsection{NewNet}
+\subsubsection{Software developer \hfill \textcolor{darkgray}{\small{2019-2020}}}
+\begin{itemize}
+  \item Design and development of a Desktop application using .NET Framework to manage software licenses of company products;
+  \item Design and development of a Mobile application using Xamarin for Zebra devices.
+  \item Implemented Aruba protocol for digital sign on PDFs with a digital card using ASP.NET;
+\end{itemize}
+%
+% \section{Personal projects}
+% \subsection{capass.org}
+% My personal containerized platform where I manage all my services including:
+% \begin{itemize}
+%   \item Git server: availble to https://git.capass.org
+%   \item Cloud storage: available to https://cloud.capass.org
+%   \item (UPCOMING) Portfolio: a repository where all my personal projects are showed in details
+% \end{itemize}
+%
+% \subsection{Wellness Nutrition}
+% A web application for a gym. It allows users to book slot for a personal trainer and personal trainers to manage a calendar. It supports mail and in-app notifications. The app is developed in  \textit{next.js}. A demo version is available at https://
+
+\section{Technical skills}
+\subsubsection{Programming}
+C, C++, Go, Rust, C\#, VHDL
+
+\subsubsection{Scripting}
+Python, Javascript, Typscript, Lua, Bash, SQL
+
+\subsubsection{Tools}
+Jupyter Notebook, Vivado, Matlab
+
+\subsubsection{Markup}
+Latex, HTML, CSS
+
+\subsubsection{Networking}
+Knowledge of MQTT, Modbus, SNMP, LoRaWAN protocols. Knowledge of AAA, Free Radius and NAC Packetfence, Cisco IOS/IOX
+
+\subsubsection{Devops}
+Github, Gitlab CI/CD, Docker and Docker Swarm, basic knowledge of Kubernetes
+
+\subsubsection{Data analysis}
+Basic statistical tools: PCA, clustering, linear regression, DoE
+\end{document}
