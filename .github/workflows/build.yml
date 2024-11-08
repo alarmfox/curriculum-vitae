@@ -1,10 +1,10 @@
+---
 name: compile and release slides
 on:
   push:
     branches:
       - main
       - master
-
 jobs:
   compile:
     runs-on: ubuntu-latest
@@ -12,21 +12,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-
       - name: Build latex
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-
       - name: Prepare assets
         run: |
           mkdir -p assets
           cp ./*.pdf ./assets/
-
       - name: semver
         uses: anitvam/conventionalcommit-semantic-releasing@v0.7.26
         with:
-          token: ${{ secrets.PERSONAL_TOKEN }}
-
+          token: ${{ secrets.GITHUB_TOKEN }}
