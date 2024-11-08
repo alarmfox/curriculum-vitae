@@ -1,14 +1,13 @@
 ---
-name: compile and release slides
+name: Compile and release CV
 on:
   push:
     branches:
-      - main
       - master
 permissions:
   contents: write
 jobs:
-  compile:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -19,11 +18,18 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-      - name: Prepare assets
-        run: |
-          mkdir -p assets
-          cp ./build/*.pdf ./assets/
-      - name: semver
-        uses: anitvam/conventionalcommit-semantic-releasing@v0.7.26
+  release:
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Release
+        uses: Roang-zero1/github-create-release-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload release artifacts
+        uses: Roang-zero1/github-upload-release-artifacts-action@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          args: build/main.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
