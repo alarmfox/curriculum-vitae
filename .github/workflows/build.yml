@@ -1,37 +1,31 @@
----
-name: Compile and release CV
+name: Compile and release
 on:
   push:
     branches:
       - master
-    tags:
-      - v*
-permissions:
-  contents: write
+
 jobs:
-  build:
+  compile:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
       - name: Build latex
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-  release:
-    needs:
-      - build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Create Release
-        uses: Roang-zero1/github-create-release-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Upload release artifacts
-        uses: Roang-zero1/github-upload-release-artifacts-action@v2
+
+      - name: Prepare assets
+        run: |
+          mkdir -p assets
+          cp ./build/*.pdf ./assets/
+
+      - name: semver
+        uses: anitvam/conventionalcommit-semantic-releasing@v0.7.26
         with:
-          args: build/main.pdf
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
