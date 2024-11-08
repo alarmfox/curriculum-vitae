@@ -23,7 +23,6 @@ jobs:
         run: |
           mkdir -p assets
           cp ./build/*.pdf ./assets/
-          ls ./assets/
       - name: semver
         uses: anitvam/conventionalcommit-semantic-releasing@v0.7.26
         with:
