@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.1.0...v1.2.0) (2024-11-09)
+
+
+### Features
+
+* technologies tab ([c79903f](https://github.com/alarmfox/curriculum-vitae/commit/c79903f446961da78e863cd5389af741f0decb5d))
+
 # [1.1.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.0.0...v1.1.0) (2024-11-09)
 
 
