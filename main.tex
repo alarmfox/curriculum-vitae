@@ -1,13 +1,15 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[11pt,a4paper]{article}
 
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{tikz}
-\usepackage[margin=0.65in]{geometry}
+\usepackage[margin=0.4in]{geometry}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{xhfill}
 \usepackage{hyperref}
+\usepackage{fontawesome5}
+\pagenumbering{gobble}
 
 \definecolor{Purple}{HTML}{5F3772}
 \newcommand\ruleafter[1]{#1~\xrfill[.7ex]{0.5pt}}
@@ -46,18 +48,19 @@
 \renewcommand{\maketitle}
 {
 
-  \begin{minipage}[t]{0.70\textwidth}\vspace{-5pt}
+  \begin{minipage}[t]{0.70\textwidth}\vspace{-10pt}
     {\huge\bfseries
     \theauthor}
 
     \vspace{.40em}
 
-    \textbf{Email:} \href{mailto:capassog97@gmail.com}{capassog97@gmail.com}\newline
-    \textbf{Cell:} +39-3273699303\newline
-    \textbf{Portfolio} \href{https://git.capass.org}{Alarmfox}
+    \faAt\  \href{mailto:capassog97@gmail.com}{capassog97@gmail.com}\newline
+    \faLinkedin\  \href{https://www.linkedin.com/in/giuseppe-capasso97/}{linkedin.com/giuseppe-capasso} \newline
+    \faGithub\  \href{https://github.com/alarmfox}{github.com/alarmfox} \newline
+    \faGit\  \href{https://git.capass.org/}{git.capass.org}
   \end{minipage}
   \hfill
-  \begin{minipage}[t]{0.30\textwidth}\vspace{-45pt}
+  \begin{minipage}[t]{0.30\textwidth}\vspace{-10pt}
     \begin{tikzpicture}
       \definecolor{Purple}{HTML}{5F3772}
       \clip (0,0) circle (2cm); 
@@ -76,30 +79,32 @@
 
   \section{Education}
   \subsection{University Federico II, Naples}
-  \subsubsection{Master degree in Computer Engineering\hfill \textcolor{darkgray}{\small{2022-now}}}
+  \subsubsection{Master's degree in Computer Engineering\hfill \textcolor{darkgray}{\small{2022-now}}}
   \paragraph{Curriculum} Hybrid curriculum in cybersecurity, embedded systems and computer networks
   
-  \subsubsection{Bachelor degree in Computer Engineering\hfill \textcolor{darkgray}{\small{2016-2022}}}
+  \subsubsection{Bachelor's degree in Computer Engineering\hfill \textcolor{darkgray}{\small{2016-2022}}}
   \paragraph{Curriculum} Multimedia Systems, Artificial Intelligence and Real Time Operating Systems 
 
   \subsubsection{Leonardo Cybersecurity Summer School\hfill \textcolor{darkgray}{\small{2024}}}
   \paragraph{Course contents} Activities focus on:
   \begin{itemize}
-    \item Cloud security: Azure cloud 
+    \item Cloud security using Azure and Bicep scripts 
     \item Vulnerability assesment and penetration testing
     \item Cyber resilience concepts
   \end{itemize}
 
-  \subsection{Cisco Netacad}
-  \subsubsection{Cisco Devnet} Deep understanding of DevOps technologies, cybersecurity and infrastractures
-  \subsubsection{Cisco CCENT} Basic understanding of Cisco IOS, Routing and Switching Essentials
+  \subsection{Cisco Networking Academy}
+  \subsubsection{Cisco Devnet\hfill \textcolor{darkgray}{\small{2021}}} 
+  \paragraph{Contents}Deep understanding of DevOps technologies like Chef, Ansible and Puppet. Network programmbility with Yang Models, RESTconf and NETconf. Infrastructure concepts with Docker containers and Jenkins focusing on cybersecurity.
+  \subsubsection{Cisco DTLab Bootcamp\hfill \textcolor{darkgray}{\small{2019}}} 
+  \paragraph{Contents} The bootcamp focused on giving strong networking fundamentals achieving \textbf{CCENT} and \textbf{PCAP} certifications. During the final phase, I worked in a team for \href{https://ssip.it/}{\textit{Italian Leather Research Institute (SSIP)}} and we built a remote collaboration system enhancing Cisco Webex experience with augmented reality.
 
   \section*{Work experience}
   \subsection{Gematica SRL}
   \subsubsection{Software engineer\hfill \textcolor{darkgray}{\small{2021-2023}}}
   \begin{itemize}
     \item Design and implementation of an air quality monitoring platform working with LoRaWAN and MQTT sensors. Technologies included Cassandra, Node.js, Python, Go-lang, embedded C, Kafka. Activities included managing a small frontend team
-    \item Managed internal Cisco networking infrastructure implementing WPA2/Enteriprise policies using Packetfence to integrate Active Directory for employees a splash portal for guests
+    \item Managed internal Cisco networking infrastructure implementing WPA2/Enteriprise policies using Packetfence to integrate Active Directory for employees and a splash portal for guests
     \item Design and implementation of a solution to analyze passenger flow in a metropolitan environment using Cisco WLC and SNMP traps. Main technologies are Go and React
     \item Integrated with a circuit breaker using modbus TCP and GO
   \end{itemize}
@@ -112,88 +117,81 @@
     \item Manage network and server infrastructure for the laboratory
     \item Support and mentoring during challange and planning phases of the Bootcamp
     \item Bridging companies and students during project works phase
-    \item Held workshop about containerzation technologies, web concepts, REST APIs and cybersecurity.  
+    \item Held workshop about containerzation, web concepts, REST APIs and cybersecurity 
   \end{itemize}
 
   \subsection{NewNet}
   \subsubsection{Software developer \hfill \textcolor{darkgray}{\small{2019-2020}}}
   \begin{itemize}
-    \item Developed a Desktop application using .NET Framework to manage software licenses of company products;
-    \item Design and development of a Mobile application using Xamarin for Zebra devices.
-    \item Implemented Aruba protocol for PDFs digital sign with a smart card using ASP.NET;
+    \item Developed a Desktop application using .NET Framework to manage company products'  software license
+    \item Developed of a Mobile application using Xamarin for Zebra devices
+    \item Implemented Aruba protocol for PDFs digital sign with a smart card using ASP.NET
   \end{itemize}
 
   \section{Projects}
-  \subsection{\href{https://github.com/alarmfox/linux-av}{linux-av}} A malware scanner for Linux systems written in Rust supporting:
- \begin{itemize}
-  \item Rules scanning with \textbf{yara};
-  \item Signature scanning;
-  \item \textbf{Sandboxed} execution with Linux namespaces;
- \end{itemize}
+  \subsection{linux-av \href{https://github.com/alarmfox/linux-av}{\faGithub}}
+  A malware scanner for Linux systems supporting rules based scanning and signature based scanning. The main feature is a \textbf{sanboxed} execution through Linux namespaces with \textit{system-call} monitoring using \textbf{eBPF} programs.\\
+
+  \textbf{Keywords:} Rust, Kernel programming, Yara rules 
   
- \subsection{\href{https://github.com/alarmfox/game-repository}{Game Repository}} A fully containerized REST API for software architecture class written GO for \textbf{\href{https://enactest-project.eu/}{ENACTEST}}
- \begin{itemize}
-   \item Managed a \textbf{Postgres} instance with large file support;
-  \item Integrated with other groups using \textbf{OpenAPI};
-  \item Introduced CI/CD through \textbf{Github Actions} to automate testing and deployment;
- \end{itemize}
+  \subsection{Game Repository \href{https://github.com/alarmfox/game-repository}{\faGithub} \href{https://game-repository.capass.org}{\faLaptopCode}}
+  \textbf{\href{https://enactest-project.eu/}{Enactest}} aims to improve software testing skills through gamification. My team designed and developed a repository to store game data and make it available to other groups through a restful API described with OpenAPI. We also focused on automate deployment and test operations through github actions. \\
 
-  \subsection{\href{https://github.com/alarmfox/criticality-aware-kubernetes}{Criticality Aware Kubernetes}}
-  A deep analysis of inner \textbf{Kubernetes} logic to provide an upper bound to pod startup:
-  \begin{itemize}
-    \item Analyzes factors affecting pod startup latency;
-    \item Validates analysis with Extreme Value Theory;
-    \item Proposes soft real-time containers in Kubernetes clusters;
-  \end{itemize}
+  \textbf{Keywords:} Go, REST API, OpenAPI, Github Actions, CI/CD 
 
-  \subsection{\href{https://github.com/alarmfox/progetto-software-security}{Linux kernel fuzzing}}
-  Implementation of \textbf{pseudo-syscalls} to enable stateful protocols fuzzing in the Linux kernel:
-  \begin{itemize}
-    \item PoC for \textbf{Syzkaller} to fuzz Linux IPsec implementation;
-    \item Utilizes Netlink and Xfrm subsystems;
-  \end{itemize}
+  \subsection{Criticality Aware Kubernetes \href{https://github.com/alarmfox/criticality-aware-kubernetes}{\faGithub}}
+  A deep analysis of inner \textbf{Kubernetes} logic to provide an upper bound to pod startup enabling support for 
+  soft real-time applications in a cloud environment. After a cluster setup, I perfomed a bottlneck analysis to identify and validate latency sources with Extreme Value Theory models. I proposed a theoretical model for a schedulability test within mixed criticality systems. \\
 
-  \subsection{\href{https://github.com/alarmfox/rt-jam}{RT-Jam}}
-  A fully functional low latency audio streaming web platform:
-  \begin{itemize}
-    \item Written completely in \textbf{Rust} using WebAssembly;
-    \item Explores \textbf{QUIC/http3} protocol for high throughput;
-    \item Utilizes \textbf{NATS} and Protocol Buffers for high performance media packet transmission;
-  \end{itemize}
-  \subsection{capass.org}
-  My personal containerized platform where I manage all my services including:
+  \textbf{Keywords:} Kubernetes, GO, Containers, Linux kernel, Python, Jupyter Notebook, Data analysis
+
+  \subsection{Linux kernel fuzzing \href{https://github.com/alarmfox/progetto-software-security}{\faGithub}}
+  I used Syzkaller to fuzz Linux IPsec implementation going through Netlink and Xfrm subsystems. Since IPsec is a 
+  stateful protocol, I implemented \textbf{pseudo-syscalls} to setup kernel data-structures to guide coverage based 
+  fuzzing. \\
+
+  \textbf{Keywords:} Kernel fuzzing, Cybersecurity, IPsec, Syzkaller 
+
+  \subsection{RT-Jam \href{https://github.com/alarmfox/rt-jam}{\faGithub}}
+  A fully functional low latency audio streaming web platform using \textbf{QUIC/http3} protocol. The application is entirely written in Rust leveraging WebAssembly technology and uses \textit{Nats} and \textit{Protocol Buffers} for high performance media packet serialization and transmission. Furthermore, user authentication and email verification are supported. \\
+
+  \textbf{Keywords:} Rust, WebAssembly, QUIC, HTTP3, Web development, Nats, Protocol buffer, Docker 
+  
+  \subsection{capass.org \href{https://github.com/alarmfox/personal-cloud}{\faGithub} \href{https://git.capass.org}{\faGit} \href{https://cloud.capass.org}{\faCloud}}
+  My personal containerized platform where I manage all within my \href{https://capass.org}{domain}. Entrypoint and SSL certificates are managed connecting \textit{Cloudflare} to my \textit{Traefik} reverse proxy. Main services are:
   \begin{itemize}
     \item \href{https://git.capass.org}{\textbf{Git server}}: where all my code is stored;
-    \item \href{https://cloud.capass.org}{\textbf{Cloud storage}}: dedicated self-hosted cloud storage solutions;
+    \item \href{https://cloud.capass.org}{\textbf{Cloud storage}}: dedicated self-hosted cloud storage solution with Nextcloud;
+    \item \textbf{Wireguard}: a personal VPN using Wireguard;
     % \item (UPCOMING) Portfolio: a repository where all my personal projects are showed in details
-  \end{itemize}
+  \end{itemize}\\
+  
+  \textbf{Keywords:} Cloud, Docker, Web development, Wireguard, VPN, Cloudflare, Traefik
 
-  \subsection{\href{https://wellnessdemo.capass.org}{Wellness Nutrition}}
-  An application currently in production written in \textbf{next.js} for a local gym:
-  \begin{itemize}
-    \item Allows users to book slot for a personal trainer;
-    \item Admin can manage a calendar;
-    \item Supports mail and in-app notifications;
-  \end{itemize}
+  \subsection{Wellness Nutrition \href{https://github.com/alarmfox/wellness-nutrition}{\faGithub} \href{https://wellnessdemo.capass.org}{\faLaptopCode}}
+  A slot management application for a local gym. It allows admins to manage their own users and time slots. Users can book a slot with their personal trainer according to their subscription. The application supports in app and e-mail notifications. The application is self-hosted on a VPS with Docker-compose.\\
+
+  \textbf{Keywords:} Cloud, Next.js, Web development, Github Actions, Docker
 
   \section{Technical skills}
   \subsubsection{Programming}
   C, C++, Go, Rust, C\#, Java, VHDL
 
   \subsubsection{Scripting}
-  Python, Javascript, Typecript, Lua, Bash, SQL
+  Python, Javascript, Typescript, Lua, Bash, SQL
 
   \subsubsection{Tools}
-  Git, Jupyter Notebook, Vivado, Matlab
+  Git, Jupyter Notebook, Vivado, Matlab 
 
   \subsubsection{Markup}
   Latex, HTML, CSS
 
   \subsubsection{Networking}
-  Knowledge of MQTT, Modbus, SNMP, LoRaWAN protocols. Knowledge of AAA, Free Radius and Cisco ISE/Packetfence, Cisco IOS/IOX
+  Knowledge of MQTT, Modbus, SNMP, LoRaWAN protocols. Free Radius and Cisco ISE/Packetfence, Cisco IOS/IOX
 
   \subsubsection{Devops and Cloud}
-  Github Workflow, Gitlab CI/CD, Docker, Docker Swarm, Kubernetes and Azure
+  Github Actions, Gitlab CI/CD, Docker, Docker Swarm, Kubernetes and Azure
+
 
   % \subsubsection{Data analysis}
   % Basic statistical tools: PCA, clustering, linear regression, DoE
