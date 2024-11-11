@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.2.1...v1.3.0) (2024-11-11)
+
+
+### Features
+
+* cybersecurity skills ([4599f36](https://github.com/alarmfox/curriculum-vitae/commit/4599f369850b31c1788f713eb223dd1d4fdbc4a5))
+
 ## [1.2.1](https://github.com/alarmfox/curriculum-vitae/compare/v1.2.0...v1.2.1) (2024-11-10)
 
 
