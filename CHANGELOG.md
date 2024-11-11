@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/alarmfox/curriculum-vitae/compare/v1.2.0...v1.2.1) (2024-11-10)
+
+
+### Bug Fixes
+
+* italian leather research institute name ([6e90041](https://github.com/alarmfox/curriculum-vitae/commit/6e900419cc07dbf4cce0c26332d2ffbe5714ac1a))
+
 # [1.2.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.1.0...v1.2.0) (2024-11-09)
 
 
