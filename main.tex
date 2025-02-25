@@ -11,6 +11,10 @@
 \usepackage{fontawesome5}
 \pagenumbering{gobble}
 
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+
 \definecolor{Purple}{HTML}{5F3772}
 \newcommand\ruleafter[1]{#1~\xrfill[.7ex]{0.5pt}}
 \renewcommand{\baselinestretch}{.9} 
@@ -100,15 +104,6 @@
   \paragraph{Contents} The bootcamp focused on giving strong networking fundamentals achieving \textbf{CCENT} and \textbf{PCAP} certifications. During the final phase, I worked in a team for \href{https://ssip.it/}{\textit{Italian Leather Research Institute}} and we built a remote collaboration system enhancing Cisco Webex experience with augmented reality.
 
   \section*{Work experience}
-  \subsection{Gematica SRL}
-  \subsubsection{Software engineer\hfill \textcolor{darkgray}{\small{2021-2023}}}
-  \begin{itemize}
-    \item Design and implementation of an air quality monitoring platform working with LoRaWAN and MQTT sensors. Technologies included Cassandra, Node.js, Python, Go-lang, embedded C, Kafka. Activities included managing a small frontend team
-    \item Managed internal Cisco networking infrastructure implementing WPA2/Enteriprise policies using Packetfence to integrate Active Directory for employees and a splash portal for guests
-    \item Design and implementation of passenger flow analysis in a metropolitan environment using Cisco WLC and SNMP traps
-    \item Integrated with a circuit breaker using modbus TCP and GO
-  \end{itemize}
-
   \subsection{Consorzio Clara}
   \subsubsection{Mentor@Cisco DTLab Networking Academy\hfill \textcolor{darkgray}{\small{2021-now}}}
 
@@ -120,6 +115,15 @@
     \item Held workshops about containerzation, web concepts, REST APIs and cybersecurity 
   \end{itemize}
 
+  \subsection{Gematica SRL}
+  \subsubsection{Software engineer\hfill \textcolor{darkgray}{\small{2021-2023}}}
+  \begin{itemize}
+    \item Design and implementation of an air quality monitoring platform working with LoRaWAN and MQTT sensors. Technologies included Cassandra, Node.js, Python, Go-lang, embedded C, Kafka. Activities included managing a small frontend team
+    \item Managed internal Cisco networking infrastructure implementing WPA2/Enteriprise policies using Packetfence to integrate Active Directory for employees and a splash portal for guests
+    \item Design and implementation of passenger flow analysis in a metropolitan environment using Cisco WLC and SNMP traps
+    \item Integrated with a circuit breaker using modbus TCP and GO
+  \end{itemize}
+
   \subsection{NewNet}
   \subsubsection{Software developer \hfill \textcolor{darkgray}{\small{2019-2020}}}
   \begin{itemize}
@@ -129,6 +133,11 @@
   \end{itemize}
 
   \section{Projects}
+  \subsection{Enclave benchmark \href{https://github.com/alarmfox/enclave-benchmark} {\faGithub}}
+  A CLI application to run benchmarks and provide insightful metrics on Intel based Trusted Execution Environments (TEE) using \textit{Gramine}. The application collects low level metrics using \textit{perf}, \textit{Linux eBPF} technology and Intel RAPL for energy mmeasurement. \\
+
+  \textbf{Keywords:} Rust, Linux eBPF, performance monitoring, Confidential Computing, Intel SGX
+
   \subsection{linux-av \href{https://github.com/alarmfox/linux-av}{\faGithub}}
   A malware scanner for Linux systems supporting rules based scanning and signature based scanning. The main feature is a \textbf{sanboxed} execution through Linux namespaces with \textit{system-call} monitoring using \textbf{eBPF} programs.\\
 
@@ -139,12 +148,12 @@
 
   \textbf{Keywords:} Go, REST API, OpenAPI, PostgreSQL, Docker, Github Actions, CI/CD 
 
-  \subsection{Criticality Aware Kubernetes \href{https://github.com/alarmfox/criticality-aware-kubernetes}{\faGithub}}
-  A deep analysis of inner \textbf{Kubernetes} logic to provide an upper bound to pod startup enabling support for 
-  soft real-time applications in a cloud environment. After a cluster setup, I perfomed a bottlneck analysis to identify and validate latency sources with Extreme Value Theory models. I proposed a theoretical model for a schedulability test within mixed criticality systems. \\
-
-  \textbf{Keywords:} Kubernetes, GO, Containers, Linux kernel, Python, Jupyter Notebook, Data analysis
-
+  % \subsection{Criticality Aware Kubernetes \href{https://github.com/alarmfox/criticality-aware-kubernetes}{\faGithub}}
+  % A deep analysis of inner \textbf{Kubernetes} logic to provide an upper bound to pod startup enabling support for 
+  % soft real-time applications in a cloud environment. After a cluster setup, I perfomed a bottlneck analysis to identify and validate latency sources with Extreme Value Theory models. I proposed a theoretical model for a schedulability test within mixed criticality systems. \\
+  %
+  % \textbf{Keywords:} Kubernetes, GO, Containers, Linux kernel, Python, Jupyter Notebook, Data analysis
+  %
   \subsection{Linux kernel fuzzing \href{https://github.com/alarmfox/progetto-software-security}{\faGithub}}
   I used Syzkaller to fuzz Linux IPsec implementation going through Netlink and Xfrm subsystems. Since IPsec is a 
   stateful protocol, I implemented \textbf{pseudo-syscalls} to setup kernel data-structures to guide coverage based 
@@ -156,32 +165,32 @@
   A fully functional low latency audio streaming web platform using \textbf{QUIC/http3} protocol. The application is entirely written in Rust leveraging WebAssembly technology and uses \textit{Nats} and \textit{Protocol Buffers} for high performance media packet serialization and transmission. Furthermore, user authentication and email verification are supported. \\
 
   \textbf{Keywords:} Rust, WebAssembly, QUIC, HTTP3, Web development, Nats, Protocol buffer, Docker 
-  
-  \subsection{capass.org \href{https://github.com/alarmfox/personal-cloud}{\faGithub} \href{https://git.capass.org}{\faGit} \href{https://cloud.capass.org}{\faCloud}}
-  My personal containerized platform where I manage all within my \href{https://capass.org}{domain}. Entrypoint and SSL certificates are managed connecting \textit{Cloudflare} to my \textit{Traefik} reverse proxy. Main services are:
-  \begin{itemize}
-    \item \href{https://git.capass.org}{\textbf{Git server}}: where all my code is stored;
-    \item \href{https://cloud.capass.org}{\textbf{Cloud storage}}: dedicated self-hosted cloud storage solution with Nextcloud;
-    \item \textbf{Wireguard}: a personal VPN using Wireguard;
-    % \item (UPCOMING) Portfolio: a repository where all my personal projects are showed in details
-  \end{itemize}
-  
-  \textbf{Keywords:} Cloud, Docker, Wireguard, VPN, Cloudflare, Traefik
-
-  \subsection{Wellness Nutrition \href{https://github.com/alarmfox/wellness-nutrition}{\faGithub} \href{https://wellnessdemo.capass.org}{\faLaptopCode}}
-  A slot management application for a local gym. It allows admins to manage their own users and time slots. Users can book a slot with their personal trainer according to their subscription. The application supports in app and e-mail notifications. The application is self-hosted on a VPS with docker-compose.\\
-
-  \textbf{Keywords:} Cloud, Next.js, Web development, Github Actions, Docker
+  %
+  % \subsection{capass.org \href{https://github.com/alarmfox/personal-cloud}{\faGithub} \href{https://git.capass.org}{\faGit} \href{https://cloud.capass.org}{\faCloud}}
+  % My personal containerized platform where I manage all within my \href{https://capass.org}{domain}. Entrypoint and SSL certificates are managed connecting \textit{Cloudflare} to my \textit{Traefik} reverse proxy. Main services are:
+  % \begin{itemize}
+  %   \item \href{https://git.capass.org}{\textbf{Git server}}: where all my code is stored;
+  %   \item \href{https://cloud.capass.org}{\textbf{Cloud storage}}: dedicated self-hosted cloud storage solution with Nextcloud;
+  %   \item \textbf{Wireguard}: a personal VPN using Wireguard;
+  %   \item (upcoming) portfolio: a repository where all my personal projects are showed in details
+  % \end{itemize}
+  %
+  % \textbf{Keywords:} Cloud, Docker, Wireguard, VPN, Cloudflare, Traefik
+  %
+  % \subsection{Wellness Nutrition \href{https://github.com/alarmfox/wellness-nutrition}{\faGithub} \href{https://wellnessdemo.capass.org}{\faLaptopCode}}
+  % A slot management application for a local gym. It allows admins to manage their own users and time slots. Users can book a slot with their personal trainer according to their subscription. The application supports in app and e-mail notifications. The application is self-hosted on a VPS with docker-compose.\\
+  %
+  % \textbf{Keywords:} Cloud, Next.js, Web development, Github Actions, Docker
 
   \section{Technical skills}
   \subsubsection{Programming}
-  C, C++, Go, Rust, C\#, Java, VHDL
+  C, C++, Go, Rust
 
   \subsubsection{Scripting}
   Python, Javascript/Typescript, Lua, Bash, SQL
 
   \subsubsection{Technologies}
-  PostgreSQL, MySQL, MongoDB, Cassandra, Nats, Apache Kafka, ActiveMQ
+  PostgreSQL, MongoDB, Cassandra, Nats, Apache Kafka, ActiveMQ
   
   \subsubsection{Cybersecurity}
   Metasploit, Burpsuite, Qualys, nmap, Nessus, Cisco Umbrella, IPsec, Wireguard
