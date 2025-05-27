@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.3.1...v1.4.0) (2025-05-27)
+
+
+### Features
+
+* removed comments ([be2a878](https://github.com/alarmfox/curriculum-vitae/commit/be2a87893ae0a7f24494dfc969111919636a555e))
+
 ## [1.3.1](https://github.com/alarmfox/curriculum-vitae/compare/v1.3.0...v1.3.1) (2024-11-11)
 
 
