@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/alarmfox/curriculum-vitae/compare/v1.4.0...v1.4.1) (2025-09-07)
+
+
+### Bug Fixes
+
+* update ([e3819cf](https://github.com/alarmfox/curriculum-vitae/commit/e3819cf41a5bdf7e1e61ebe5f0196f0480b5dc97))
+
 # [1.4.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.3.1...v1.4.0) (2025-05-27)
 
 
