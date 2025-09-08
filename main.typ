@@ -52,19 +52,19 @@
   // consistent: true
 )
 - Cumulative GPA: 3.9/4.0 | Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardware
-- Relevant Coursework: Advanced Computer Architectures and GPU Programming, Advanced Real-Time Systems, Network Security, Software Security, Web and Real-Time communication Systems
+- Relevant coursework: Advanced Computer Architectures and GPU Programming, Advanced Real-Time Systems, Network Security, Software Security, Web and Real-Time Communication Systems
 
 #edu(
   institution: "University of Naples Federico II",
   location: "Naples, IT",
   dates: dates-helper(start-date: "Sept 2016", end-date: "Nov 2022"),
-  degree: "Bachelor's of Science, Computer Engineering",
+  degree: "Bachelor of Science, Computer Engineering",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 3.5/4.0 | Thesis: Performance evaluation of priority based scheduling algorithms
-- Relevant Coursework: Real-time Systems, Artificial Intelligence, Linear Algebra, Computer architectures
+- Cumulative GPA: 3.5/4.0 | Thesis: Performance Evaluation of Priority-Based Scheduling Algorithms
+- Relevant coursework: Real-Time Systems, Artificial Intelligence, Linear Algebra, Computer Architectures
 
 == Work Experience
 #work(
@@ -73,10 +73,10 @@
   company: "Clara Consortium/Cisco",
   dates: dates-helper(start-date: "Mar 2021", end-date: "Sep 2025"),
 )
-- *Design and delivery of interactive workshops (DevOps & Cybersecurity)* Developed training content and hands-on exercises to build operational skills in CI/CD, automation, and application security practices.
-- *Laboratory infrastructure and services management* Responsible for provisioning, maintenance, and operational support of lab environments, ensuring availability, isolation, and accessibility for practical activities and testing.
-- *Coordination between companies and students in final project work*  Acted as liaison between corporate partners and student teams during the deliverable phase; supported requirement definition, solution validation, and results assessment.
-- *Delivery of specialist workshops* Led practical sessions on Web development, REST API design and consumption, software security, and container technologies, with a focus on hands-on exercises and best practices.
+- *Designed and delivered interactive workshops (DevOps & Cybersecurity).* Created training content and hands-on exercises to build operational skills in CI/CD, automation, and application security practices.
+- *Managed laboratory infrastructure and services.* Provisioned, maintained, and supported lab environments to ensure availability, isolation, and accessibility for practical exercises and testing.
+- *Coordinated industry-student final projects.* Served as liaison between corporate partners and student teams; supported requirements definition, solution validation, and assessment.
+- *Led specialist sessions.* Ran practical workshops on web development, REST API design, software security, and container technologies with an emphasis on hands-on learning and best practices.
 
 #work(
   title: "Cisco Specialist @The Big Hack",
@@ -84,9 +84,8 @@
   company: "Clara Consortium/Cisco",
   dates: dates-helper(start-date: "Jun 28, 2025", end-date: "Jun 29, 2025"),
 )
-- Provided specialized technical support to participating teams for the adoption and integration of Cisco solutions, including debugging, best practices, and optimization.
-- Contributed to the jury’s decision-making process by evaluating proposed solutions and participating in winner selection.
-- Assessed projects with a focus on technical feasibility and innovation.
+- Provided technical support to teams adopting Cisco solutions, including debugging, best practices, and optimization guidance.
+- Contributed to the jury’s decision-making process by evaluating proposed solutions on tecnical feasibility and innovation
 
 #work(
   title: "Software Engineer",
@@ -94,10 +93,10 @@
   company: "Gematica SRL",
   dates: dates-helper(start-date: "Feb 2021", end-date: "Dec 2022"),
 )
-- *Design and development of an air quality monitoring platform* Implemented an IoT solution for detecting and visualizing air quality using LoRaWAN sensors (Libelium) and a WeatherLink weather station. Managed the full LoRaWAN infrastructure with indoor/outdoor gateways, data collection and normalization, and development of dashboards and alerts for operational stakeholders.
-- *Architecture for automated management of smart gates* Designed and implemented the control architecture for metro network gates, integrating smart validators and supervising differential circuit breakers via Modbus TCP for automation, monitoring, and operational safety.
-- *Application for Wi-Fi traffic monitoring and passenger flow analysis* Developed an application to analyze passenger flows in the metro network using SNMP traps from Cisco WLCs; leveraged data to optimize travel planning and support operational decision-making.
-- *Cisco network infrastructure and user access management* Administered Cisco LAN/WLAN networks with WPA2-Enterprise policy implementation, integration with Active Directory for employee authentication, and design/management of a guest portal via PacketFence for visitor access.
+- *Built an air-quality monitoring platform.* Developed an IoT solution using LoRaWAN sensors, a WeatherLink station and custom embedded systems; operated gateways, normalized data, and created dashboards and alerts for stakeholders.
+- *Engineered automation for smart gates.* Created the control architecture for metro network gates, integrating smart validators and supervising differential circuit breakers via Modbus TCP for monitoring and safety.
+- *Developed a Wi-Fi traffic and passenger-flow analytics app.* Processed SNMP traps from Cisco WLCs to extract passenger-flow insights and support operational planning.
+- *Administered Cisco networks and access.* Managed LAN/WLAN infrastructure, applied WPA2-Enterprise policies, integrated Active Directory for authentication, and implemented a guest portal via PacketFence.
 
 #work(
   title: "Software Developer",
@@ -105,10 +104,10 @@
   company: "NewNet SRL",
   dates: dates-helper(start-date: "Oct 2019", end-date: "Sept 2020"),
 )
-- *Multi-platform design and development (.NET / ASP.NET Core / Xamarin)* Designed and developed desktop applications with .NET Framework, web services and interfaces with ASP.NET Core, and cross-platform mobile apps with Xamarin. Containerized services and deployed microservices architectures using Docker to enable scalability and portability.
-- *Customer license management system* Developed a license management tool including key issuance, expiration tracking, and reporting, with focus on security and traceability of activations.
-- *Warehouse management with barcode integration* Built a warehouse control solution integrating barcode readers for inventory processes, goods intake, and shipments, improving efficiency of logistics workflows.
-- *Digital signature integration (Aruba, smartcard)* Implemented digital signature protocol via Aruba for automated signing of PDF documents using smartcards, managing certificate authentication and signature workflow for compliant archiving.
+- *Multi-platform development (.NET / ASP.NET Core / Xamarin).* Built desktop applications with the .NET Framework, web services with ASP.NET Core, and cross-platform mobile apps with Xamarin. Containerized services and deployed microservice architectures using Docker to improve portability.
+- *Created a license-management system.* Implemented key issuance, expiration tracking, and reporting with a focus on security and traceability.
+- *Implemented warehouse management with barcode integration.* Delivered inventory workflows for goods intake and shipment, improving logistics efficiency.
+- *Integrated digital signatures (Aruba, smartcard).* Automated PDF signing workflows using smartcards and managed certificate-based authentication for compliant archiving.
 
 == Projects
 
@@ -121,39 +120,42 @@
   // URL is also optional
   url: "github.com/HiSA-Team/shadowfax/tree/feature/create-tvm",
 )
-- shadowfax is a CoVE specification compliant TSM-driver written in Rust. It is intended to provide the basic foundations for RISC-V Application-class CPUs Trusted Computing
-- Achieved TEECALL/TEERET protocol with multiple supervisor domains
-- Supports Linux kernel booting and bare custom bare-metal hypervisor for guest creation
+- Shadowfax is a CoVE-specification–compliant TSM-driver written in Rust that provides the foundation for trusted computing on RISC-V application-class CPUs.
+- Implemented TEECALL/TEERET protocols across multiple supervisor domains with a secure context-switch.
+- Boots a digitally signed TEE Security Module (TSM) for Trusted Virtual Machine management.
+- Supports Linux kernel boot and a custom bare-metal hypervisor for guest creation.
 
 #project(
   name: "Enclave benchmark",
   url: "github.com/alarmfox/enclave-benchmark"
 )
-- Developed a Rust CLI application to benchmark Trusted Execution Environments (TEE) on Intel SGX using Gramine, as part of the High Performance and Quantum Computing course
-- For each workload, the application generates an enclave and collects low- and high-level metrics on instructions, energy, and I/O using performance counters with _perf_, _Linux eBPF_, and _Intel RAPL_
+- Built a Rust CLI tool to benchmark Trusted Execution Environments (TEE) on Intel SGX using Gramine for the High Performance and Quantum Computing course.
+- For each workload the tool creates an enclave and captures metrics (instructions, energy, I/O) using _perf_, Linux _eBPF_, and _Intel RAPL_.
+- Supports a in-depth tracing mode which traces all memory and disk accesses.
+- Analyzes disk I/O access patterns
 
 #project(
   name: "RT-Jam",
   url: "github.com/alarmfox/rt-jam"
 )
-- Built a fully functional low-latency Rust audio streaming web platform based on the *QUIC/HTTP3* protocol leveraging *WebAssembly*
-- Implemented NATS and Protocol Buffers for high-performance media packet serialization and transmission
-- Added user authentication and email verification to ensure secure access.
+- Developed a low-latency Rust audio-streaming platform using QUIC/HTTP3 and WebAssembly.
+- Integrated NATS and Protocol Buffers for high-performance media serialization and transmission.
+- Added authentication and email verification to secure user access.
 
 #project(
   name: "IPSec Fuzzing",
   url: "github.com/alarmfox/ipsec-fuzzing"
 )
-- Used *Syzkaller* to fuzz the Linux IPsec implementation via Netlink and XFRM subsystems, targeting stateful protocol vulnerabilities.
-- Implemented *pseudo-syscalls* to initialize kernel data structures, enabling coverage-guided fuzzing for complex, stateful interactions.
+- Employed *Syzkaller* to fuzz the Linux IPsec implementation via Netlink and XFRM, targeting stateful protocol vulnerabilities.
+- Created *pseudo-syscalls* to initialize kernel structures and enable coverage-guided fuzzing for complex interactions.
 
 #project(
   name: "xrpc",
   url: "github.com/alarmfox/xrpc"
 )
-- _xrpc_, a lightweight C library targeting distributed mathematical computation
-- Designed a compact binary protocol for batch transmission of *multidimensional* data
-- Implemented atomic reference counting, connection pooling with cache-line alignement to achieve high-performance request processing
+- _xrpc_, a lightweight C library for distributed mathematical computation.
+- Designed a compact binary protocol for batch transmission of *multidimensional* data.
+- Implemented atomic reference counting and connection pooling with cache-line alignment to maximize throughput.
 
 == Extracurricular Activities
 
@@ -171,15 +173,15 @@
   // url: "",
   date: "2021",
 )
-- Automated DevOps toolchains with Chef, Ansible, and Puppet and network programmability using YANG models and management protocols (RESTCONF, NETCONF).
-- Building containerized infrastructures and CI/CD pipelines with Docker and Jenkins, applying security best practices across the stack (secure configuration, secrets management, image hardening, and safe deployments).
+- Automated DevOps toolchains with Chef, Ansible, Puppet and applied network programmability using YANG models and management protocols (RESTCONF, NETCONF).
+- Built containerized infrastructure and CI/CD pipelines with Docker and Jenkins, applying secure configuration, secrets management, image hardening, and safe-deployment practices.
 
 #extracurriculars(
   activity: "Cisco Digital Ready Networking Bootcamp",
   dates: dates-helper(start-date: "Feb 2019", end-date: "Jul 2019"),
 )
 - Achieved *CCENT* (Cisco Certified Entry Networking Technician) and *PCAP* (Python Certified Associate) certifications.
-- Completed a final project with the Italian Leather Research Institute, developing a remote collaboration system integrating augmented reality features into Cisco Webex.
+- Completed a final project with the Italian Leather Research Institute, developing a remote collaboration system that integrated augmented reality features into Cisco Webex.
 
 // == Skills
 // - *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
