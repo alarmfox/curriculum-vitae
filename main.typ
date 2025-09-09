@@ -93,7 +93,7 @@
   company: "Gematica SRL",
   dates: dates-helper(start-date: "Feb 2021", end-date: "Dec 2022"),
 )
-- *Built an air-quality monitoring platform.* Developed an IoT solution using LoRaWAN sensors, a WeatherLink station and custom embedded systems; operated gateways, normalized data, and created dashboards and alerts for stakeholders.
+- *Built an air-quality monitoring platform.* Developed an IoT solution using LoRaWAN sensors, a WeatherLink station and custom embedded systems; operated gateways, normalized data, created dashboards and alerts for stakeholders.
 - *Engineered automation for smart gates.* Created the control architecture for metro network gates, integrating smart validators and supervising differential circuit breakers via Modbus TCP for monitoring and safety.
 - *Developed a Wi-Fi traffic and passenger-flow analytics app.* Processed SNMP traps from Cisco WLCs to extract passenger-flow insights and support operational planning.
 - *Administered Cisco networks and access.* Managed LAN/WLAN infrastructure, applied WPA2-Enterprise policies, integrated Active Directory for authentication, and implemented a guest portal via PacketFence.
@@ -132,7 +132,7 @@
 - Built a Rust CLI tool to benchmark Trusted Execution Environments (TEE) on Intel SGX using Gramine for the High Performance and Quantum Computing course.
 - For each workload the tool creates an enclave and captures metrics (instructions, energy, I/O) using _perf_, Linux _eBPF_, and _Intel RAPL_.
 - Supports a in-depth tracing mode which traces all memory and disk accesses.
-- Analyzes disk I/O access patterns
+- Analyzes disk I/O access random and sequential patterns.
 
 #project(
   name: "RT-Jam",
@@ -146,7 +146,7 @@
   name: "IPSec Fuzzing",
   url: "github.com/alarmfox/ipsec-fuzzing"
 )
-- Employed *Syzkaller* to fuzz the Linux IPsec implementation via Netlink and XFRM, targeting stateful protocol vulnerabilities.
+- Employed *Syzkaller* to fuzz the Linux IPsec implementation via Netlink and XFRM API, targeting stateful protocol vulnerabilities.
 - Created *pseudo-syscalls* to initialize kernel structures and enable coverage-guided fuzzing for complex interactions.
 
 #project(
@@ -155,7 +155,7 @@
 )
 - _xrpc_, a lightweight C library for distributed mathematical computation.
 - Designed a compact binary protocol for batch transmission of *multidimensional* data.
-- Implemented atomic reference counting and connection pooling with cache-line alignment to maximize throughput.
+- Implemented atomic reference counting and connection pooling with cache-line alignment.
 
 == Extracurricular Activities
 
