@@ -52,7 +52,7 @@
   // consistent: true
 )
 - Cumulative GPA: 3.9/4.0 | Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardware
-- Relevant coursework: Advanced Computer Architectures and GPU Programming, Advanced Real-Time Systems, Network Security, Software Security, Web and Real-Time Communication Systems
+- Relevant coursework: Advanced Computer Architectures and GPU Programming, Advanced Real-Time Systems, Embedded Systems, Network Security, Software Security, Web and Real-Time Communication System.
 
 #edu(
   institution: "University of Naples Federico II",
@@ -64,9 +64,18 @@
   // consistent: true
 )
 - Cumulative GPA: 3.5/4.0 | Thesis: Performance Evaluation of Priority-Based Scheduling Algorithms
-- Relevant coursework: Real-Time Systems, Artificial Intelligence, Linear Algebra, Computer Architectures
+- Relevant coursework: Computer Architectures, Operating Systems, Real-Time Systems, Artificial Intelligence, Advanced Calculus, Linear Algebra.
 
 == Work Experience
+#work(
+  title: "Research Intern",
+  dates: dates-helper(start-date: "Jul 2025", end-date: "Current"),
+  location: "Naples, IT",
+)
+- *Confidential Computing for RISC-V.* Continued working on Shadowfax: a firmware for Confidential Virtualization for RISC-V application-class processors.
+- *Bare metal hypervisor.* Created a simple RISC-V hypervisor to launch minimal virtual machines leveraging RISC-V H-extension.
+- *Test and platform automation.* Built a firwmare test infrastructure using QEMU and integrated with Github CI/CD.
+
 #work(
   title: "Mentor @Cisco DTLab",
   location: "Naples, IT",
@@ -85,13 +94,13 @@
   dates: dates-helper(start-date: "Jun 28, 2025", end-date: "Jun 29, 2025"),
 )
 - Provided technical support to teams adopting Cisco solutions, including debugging, best practices, and optimization guidance.
-- Contributed to the jury’s decision-making process by evaluating proposed solutions on tecnical feasibility and innovation
+- Contributed to the jury’s decision-making process by evaluating proposed solutions on technical feasibility and innovation.
 
 #work(
   title: "Software Engineer",
   location: "Naples, IT",
   company: "Gematica SRL",
-  dates: dates-helper(start-date: "Feb 2021", end-date: "Dec 2022"),
+  dates: dates-helper(start-date: "Jan 2021", end-date: "Dec 2022"),
 )
 - *Built an air-quality monitoring platform.* Developed an IoT solution using LoRaWAN sensors, a WeatherLink station and custom embedded systems; operated gateways, normalized data, created dashboards and alerts for stakeholders.
 - *Engineered automation for smart gates.* Created the control architecture for metro network gates, integrating smart validators and supervising differential circuit breakers via Modbus TCP for monitoring and safety.
@@ -106,7 +115,7 @@
 )
 - *Multi-platform development (.NET / ASP.NET Core / Xamarin).* Built desktop applications with the .NET Framework, web services with ASP.NET Core, and cross-platform mobile apps with Xamarin. Containerized services and deployed microservice architectures using Docker to improve portability.
 - *Created a license-management system.* Implemented key issuance, expiration tracking, and reporting with a focus on security and traceability.
-- *Implemented warehouse management with barcode integration.* Delivered inventory workflows for goods intake and shipment, improving logistics efficiency.
+- *Implemented warehouse management with barcode integration.*  Built an android application for dedicated devices for goods intake and shipment, improving logistics efficiency.
 - *Integrated digital signatures (Aruba, smartcard).* Automated PDF signing workflows using smartcards and managed certificate-based authentication for compliant archiving.
 
 == Projects
@@ -124,15 +133,24 @@
 - Implemented TEECALL/TEERET protocols across multiple supervisor domains with a secure context-switch.
 - Boots a digitally signed TEE Security Module (TSM) for Trusted Virtual Machine management.
 - Supports Linux kernel boot and a custom bare-metal hypervisor for guest creation.
+- Introduced at the RISCV Summit Europe 2025 (https://riscv-europe.org/summit/2025/media/proceedings/2025-05-14-RISC-V-Summit-Europe-P1.1.12-MERCOGLIANO-poster.pdf).
 
 #project(
   name: "Enclave benchmark",
   url: "github.com/alarmfox/enclave-benchmark"
 )
-- Built a Rust CLI tool to benchmark Trusted Execution Environments (TEE) on Intel SGX using Gramine for the High Performance and Quantum Computing course.
-- For each workload the tool creates an enclave and captures metrics (instructions, energy, I/O) using _perf_, Linux _eBPF_, and _Intel RAPL_.
-- Supports a in-depth tracing mode which traces all memory and disk accesses.
-- Analyzes disk I/O access random and sequential patterns.
+- Built a Rust CLI tool to benchmark Trusted Execution Environments (TEE) on Intel SGX using Gramine.
+- For each workload the tool creates an enclave and collects metrics (instructions, energy, I/O) using _perf_, Linux _eBPF_, and _Intel RAPL_.
+- Supports a in-depth tracing mode which traces all memory accesses and allocations.
+- Analyzes disk I/O access random and sequential patterns using an eBPF program.
+
+#project(
+  name: "xrpc",
+  url: "github.com/alarmfox/xrpc"
+)
+- _xrpc_, a lightweight C library for distributed mathematical computation.
+- Designed a compact binary protocol for batch transmission of *multidimensional* data.
+- Implemented reference counting and connection pooling with cache-line alignment using lock-free primitives.
 
 #project(
   name: "RT-Jam",
@@ -149,23 +167,15 @@
 - Employed *Syzkaller* to fuzz the Linux IPsec implementation via Netlink and XFRM API, targeting stateful protocol vulnerabilities.
 - Created *pseudo-syscalls* to initialize kernel structures and enable coverage-guided fuzzing for complex interactions.
 
-#project(
-  name: "xrpc",
-  url: "github.com/alarmfox/xrpc"
-)
-- _xrpc_, a lightweight C library for distributed mathematical computation.
-- Designed a compact binary protocol for batch transmission of *multidimensional* data.
-- Implemented atomic reference counting and connection pooling with cache-line alignment.
-
 == Extracurricular Activities
 
 #extracurriculars(
   activity: "Leonardo Summer Course",
-  dates: dates-helper(start-date: "Jan 2024", end-date: "Jul 2024"),
+  dates: dates-helper(start-date: "Jun 2024", end-date: "Jul 2024"),
 )
-- *Cloud Security* Infrastructure security concepts focusing Azure cloud solutions and automation strategies using Bicep and Terraform
-- *Vulnerability Assesment and Penetration Testing* Hands on activities with Leonardo's Red Team on both Linux and Windows systems using Qualys, metasploit
-- *Cyber Resilience Architectures*: Hazard analysis and risk analysis methodologies on supply chain scenarios
+- *Cloud Security* Infrastructure security concepts focusing Azure cloud solutions and automation strategies using Bicep and Terraform.
+- *Vulnerability Assesment and Penetration Testing* Hands on activities with Leonardo's Red Team on both Linux and Windows systems using Qualys, metasploit.
+- *Cyber Resilience Architectures*: Hazard analysis and risk analysis methodologies on supply chain scenarios.
 
 #certificates(
   name: "Devnet",
