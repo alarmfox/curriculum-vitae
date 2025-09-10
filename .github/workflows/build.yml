@@ -16,11 +16,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-
+       
       - name: Install Typst
         run: |
-          sudo apt-get update && DEBIAN_FRONTEND=noninteractive sudo apt-get install typst
-
+          wget https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz
+          tar -xf typst-x86_64-unknown-linux-musl.tar.xz
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
+          
       - name: Build Typst
         run: |
           mkdir -p build
