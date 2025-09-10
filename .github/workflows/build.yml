@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
   compile:
     runs-on: ubuntu-latest
@@ -17,15 +17,19 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Build latex
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: main.tex
+      - name: Install Typst
+        run: |
+          sudo apt-get update && DEBIAN_FRONTEND=noninteractive sudo apt-get install typst
+
+      - name: Build Typst
+        run: |
+          mkdir -p build
+          typst compile main.typ
 
       - name: Prepare assets
         run: |
           mkdir -p assets
-          cp ./build/*.pdf ./assets/
+          cp main.pdf ./assets/
 
       - name: semver
         uses: anitvam/conventionalcommit-semantic-releasing@v0.7.26
