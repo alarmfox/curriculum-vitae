@@ -74,7 +74,7 @@
 )
 - *Confidential Computing for RISC-V.* Continued working on Shadowfax: a firmware for Confidential Virtualization for RISC-V application-class processors.
 - *Bare metal hypervisor.* Created a simple RISC-V hypervisor to launch minimal virtual machines leveraging RISC-V H-extension.
-- *Test and platform automation.* Built a firwmare test infrastructure using QEMU and integrated with Github CI/CD.
+- *Test and platform automation.* Built a firmware test infrastructure using QEMU and integrated with Github CI/CD.
 
 #work(
   title: "Mentor @Cisco DTLab",
