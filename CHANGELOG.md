@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.4.1...v1.5.0) (2025-09-10)
+
+
+### Features
+
+* new cv format ([f2bae69](https://github.com/alarmfox/curriculum-vitae/commit/f2bae69bd810bcd6bc5763f3e0aed5386de8254e))
+
 ## [1.4.1](https://github.com/alarmfox/curriculum-vitae/compare/v1.4.0...v1.4.1) (2025-09-07)
 
 
