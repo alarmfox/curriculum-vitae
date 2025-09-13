@@ -7,7 +7,7 @@
 #let github = "github.com/alarmfox"
 #let linkedin = "linkedin.com/in/giuseppe-capasso97"
 #let phone = "+39 327-369-9303"
-#let personal-site = "stuxf.dev"
+#let personal-site = "giuseppe.capass.org"
 
 #show: resume.with(
   author: name,
@@ -53,6 +53,7 @@
 )
 - Cumulative GPA: 3.9/4.0 | Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardware
 - Relevant coursework: Advanced Computer Architectures and GPU Programming, Advanced Real-Time Systems, Embedded Systems, Network Security, Software Security, Web and Real-Time Communication System.
+- Teaching Assistant (Tutor): led tutorials and practical sessions for undergraduate courses in Calculus I and Geometry
 
 #edu(
   institution: "University of Naples Federico II",
