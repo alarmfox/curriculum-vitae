@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.5.0...v1.6.0) (2025-09-13)
+
+
+### Features
+
+* added tutor stuff ([d4e9f22](https://github.com/alarmfox/curriculum-vitae/commit/d4e9f22662be54a013d222eb1cb46493d09faed8))
+
 # [1.5.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.4.1...v1.5.0) (2025-09-10)
 
 
