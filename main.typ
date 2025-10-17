@@ -19,7 +19,7 @@
   github: github,
   linkedin: linkedin,
   phone: phone,
-  // personal-site: personal-site,
+  personal-site: personal-site,
   accent-color: "#26428b",
   font: "Computer Modern",
   paper: "us-letter",
@@ -51,9 +51,9 @@
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 3.9/4.0 | Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardware
+- Cumulative GPA: 3.9/4.0 | Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardwarex
 - Relevant coursework: Advanced Computer Architectures and GPU Programming, Advanced Real-Time Systems, Embedded Systems, Network Security, Software Security, Web and Real-Time Communication System.
-- Teaching Assistant (Tutor): led tutorials and practical sessions for undergraduate courses in Calculus I and Geometry
+- Teaching Assistant (Tutor): led tutorials and practical sessions for undergraduate courses in Calculus I and Geometry.
 
 #edu(
   institution: "University of Naples Federico II",
@@ -70,12 +70,13 @@
 == Work Experience
 #work(
   title: "Research Intern",
-  dates: dates-helper(start-date: "Jul 2025", end-date: "Current"),
+  company: "University of Sannio",
   location: "Naples, IT",
+  dates: dates-helper(start-date: "Oct 2025", end-date: "March 2026"),
 )
-- *Confidential Computing for RISC-V.* Continued working on Shadowfax: a firmware for Confidential Virtualization for RISC-V application-class processors.
-- *Bare metal hypervisor.* Created a simple RISC-V hypervisor to launch minimal virtual machines leveraging RISC-V H-extension.
-- *Test and platform automation.* Built a firmware test infrastructure using QEMU and integrated with Github CI/CD.
+- *Confidential Computing on RISC-V.* Worked on Shadowfax: a security-firmware for Confidential Virtualization for RISC-V application-class processors.
+- *Test and platform automation.* Built an infrastructure using QEMU and Python GDB for secure context switches testing. Integrated with Github CI/CD.
+- *Contribution to Simply-V.* working on OpenSBI integration for a RISC-V based SoC on Xilinx Alveo U250.
 
 #work(
   title: "Mentor @Cisco DTLab",
@@ -106,7 +107,7 @@
 - *Built an air-quality monitoring platform.* Developed an IoT solution using LoRaWAN sensors, a WeatherLink station and custom embedded systems; operated gateways, normalized data, created dashboards and alerts for stakeholders.
 - *Engineered automation for smart gates.* Created the control architecture for metro network gates, integrating smart validators and supervising differential circuit breakers via Modbus TCP for monitoring and safety.
 - *Developed a Wi-Fi traffic and passenger-flow analytics app.* Processed SNMP traps from Cisco WLCs to extract passenger-flow insights and support operational planning.
-- *Administered Cisco networks and access.* Managed LAN/WLAN infrastructure, applied WPA2-Enterprise policies, integrated Active Directory for authentication, and implemented a guest portal via PacketFence.
+- *Administered Cisco networks and access.* Managed LAN infrastructure, applied WPA2-Enterprise policies, integrated Active Directory for authentication, and implemented a guest portal via PacketFence.
 
 #work(
   title: "Software Developer",
@@ -114,7 +115,7 @@
   company: "NewNet SRL",
   dates: dates-helper(start-date: "Oct 2019", end-date: "Sept 2020"),
 )
-- *Multi-platform development (.NET / ASP.NET Core / Xamarin).* Built desktop applications with the .NET Framework, web services with ASP.NET Core, and cross-platform mobile apps with Xamarin. Containerized services and deployed microservice architectures using Docker to improve portability.
+- *Multi-platform development (.NET / ASP.NET Core / Xamarin).* Built desktop applications with the .NET Framework, web services with ASP.NET Core, and cross-platform mobile apps with Xamarin. Containerized and deployed services using Docker.
 - *Created a license-management system.* Implemented key issuance, expiration tracking, and reporting with a focus on security and traceability.
 - *Implemented warehouse management with barcode integration.*  Built an android application for dedicated devices for goods intake and shipment, improving logistics efficiency.
 - *Integrated digital signatures (Aruba, smartcard).* Automated PDF signing workflows using smartcards and managed certificate-based authentication for compliant archiving.
@@ -128,7 +129,7 @@
   // Dates is optional
   // dates: dates-helper(start-date: "Nov 2023", end-date: "Present"),
   // URL is also optional
-  url: "github.com/HiSA-Team/shadowfax/tree/feature/create-tvm",
+  url: "github.com/HiSA-Team/shadowfax",
 )
 - Shadowfax is a CoVE-specification–compliant TSM-driver written in Rust that provides the foundation for trusted computing on RISC-V application-class CPUs.
 - Implemented TEECALL/TEERET protocols across multiple supervisor domains with a secure context-switch.
@@ -175,7 +176,7 @@
   dates: dates-helper(start-date: "Jun 2024", end-date: "Jul 2024"),
 )
 - *Cloud Security* Infrastructure security concepts focusing Azure cloud solutions and automation strategies using Bicep and Terraform.
-- *Vulnerability Assesment and Penetration Testing* Hands on activities with Leonardo's Red Team on both Linux and Windows systems using Qualys, metasploit.
+- *Vulnerability Assessment and Penetration Testing* Hands on activities with Leonardo's Red Team on both Linux and Windows systems using Qualys, metasploit.
 - *Cyber Resilience Architectures*: Hazard analysis and risk analysis methodologies on supply chain scenarios.
 
 #certificates(
