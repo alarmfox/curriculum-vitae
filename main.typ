@@ -51,7 +51,7 @@
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 3.9/4.0 | Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardwarex
+- Cumulative GPA: 3.9/4.0 | Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardware.
 - Relevant coursework: Advanced Computer Architectures and GPU Programming, Advanced Real-Time Systems, Embedded Systems, Network Security, Software Security, Web and Real-Time Communication System.
 - Teaching Assistant (Tutor): led tutorials and practical sessions for undergraduate courses in Calculus I and Geometry.
 
@@ -64,7 +64,7 @@
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 3.5/4.0 | Thesis: Performance Evaluation of Priority-Based Scheduling Algorithms
+- Cumulative GPA: 3.5/4.0 | Thesis: Performance Evaluation of Priority-Based Scheduling Algorithms.
 - Relevant coursework: Computer Architectures, Operating Systems, Real-Time Systems, Artificial Intelligence, Advanced Calculus, Linear Algebra.
 
 == Work Experience
@@ -72,11 +72,11 @@
   title: "Research Intern",
   company: "University of Sannio",
   location: "Naples, IT",
-  dates: dates-helper(start-date: "Oct 2025", end-date: "March 2026"),
+  dates: dates-helper(start-date: "July 2025", end-date: "Current"),
 )
-- *Confidential Computing on RISC-V.* Worked on Shadowfax: a security-firmware for Confidential Virtualization for RISC-V application-class processors.
-- *Test and platform automation.* Built an infrastructure using QEMU and Python GDB for secure context switches testing. Integrated with Github CI/CD.
-- *Contribution to Simply-V.* working on OpenSBI integration for a RISC-V based SoC on Xilinx Alveo U250.
+- *Confidential Computing on RISC-V.* developed a secure firmware and a trusted hypervisor implementing virtual-machine based Confidential Computing for RISC-V application-class processors.
+- *Security Test and platform automation.* Built an test infrastructure using QEMU and Python GDB to simulate attack scenarios from attack graphs. Integrated with CI/CD.
+- *Contribution to Simply-V.* Integrated OpenSBI and FreeRTOS on a RISC-V based soft SoC for Xilinx FPGAs. Contributed to build system architecture and atomics testing.
 
 #work(
   title: "Mentor @Cisco DTLab",
@@ -90,7 +90,7 @@
 - *Led specialist sessions.* Ran practical workshops on web development, REST API design, software security, and container technologies with an emphasis on hands-on learning and best practices.
 
 #work(
-  title: "Cisco Specialist @The Big Hack",
+  title: "Specialist @The Big Hack",
   location: "Apple Developer Academy, Naples, IT",
   company: "Clara Consortium/Cisco",
   dates: dates-helper(start-date: "Jun 28, 2025", end-date: "Jun 29, 2025"),
@@ -131,11 +131,9 @@
   // URL is also optional
   url: "github.com/HiSA-Team/shadowfax",
 )
-- Shadowfax is a CoVE-specification–compliant TSM-driver written in Rust that provides the foundation for trusted computing on RISC-V application-class CPUs.
-- Implemented TEECALL/TEERET protocols across multiple supervisor domains with a secure context-switch.
-- Boots a digitally signed TEE Security Module (TSM) for Trusted Virtual Machine management.
-- Supports Linux kernel boot and a custom bare-metal hypervisor for guest creation.
-- Introduced at the RISCV Summit Europe 2025 (https://riscv-europe.org/summit/2025/media/proceedings/2025-05-14-RISC-V-Summit-Europe-P1.1.12-MERCOGLIANO-poster.pdf).
+- Shadowfax is a CoVE-compliant TSM-driver written in Rust that provides the foundation for trusted computing on RISC-V application-class CPUs, introduced at the #link("https://riscv-europe.org/summit/2025/media/proceedings/2025-05-14-RISC-V-Summit-Europe-P1.1.12-MERCOGLIANO-poster.pdf")[RISC-V-Summit-Europe].
+- Supports a digitally signed TEE Security Manager (TSM) with hypervisor capabilities for Trusted Virtual Machine management.
+- Supports local attestation through DICE protocol.
 
 #project(
   name: "Enclave benchmark",
