@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.6.0...v1.7.0) (2025-12-12)
+
+
+### Features
+
+* update ([93051d2](https://github.com/alarmfox/curriculum-vitae/commit/93051d2f1eb1557f63fb348daa23c26d0718be3e))
+
 # [1.6.0](https://github.com/alarmfox/curriculum-vitae/compare/v1.5.0...v1.6.0) (2025-09-13)
 
 
