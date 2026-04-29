@@ -12,7 +12,7 @@
 #show: resume.with(
   author: name,
   // All the lines below are optional.
-  // For example, if you want to to hide your phone number:
+  // For example, if you want to hide your phone number:
   // feel free to comment those lines out and they will not show.
   location: location,
   email: email,
@@ -46,57 +46,57 @@
   institution: "University of Naples Federico II",
   location: "Naples, IT",
   dates: dates-helper(start-date: "Sept 2022", end-date: "July 2025"),
-  degree: "Master of Science, Computer Engineering",
+  degree: "Master of Science, Computer Engineering (Score 110/110 cum Laude)",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   // consistent: true
 )
-- Cumulative GPA: 3.9/4.0 | Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardware.
-- Relevant coursework: Advanced Computer Architectures and GPU Programming, Advanced Real-Time Systems, Embedded Systems, Network Security, Software Security, Web and Real-Time Communication System.
-- Teaching Assistant (Tutor): led tutorials and practical sessions for undergraduate courses in Calculus I and Geometry.
+- Thesis: A Secure Firmware for Confidential Virtualization on Open-Source Hardware: design and implementation of trusted firmware and hypervisor for confidential VMs on RISC-V.
+- *Future Work & References:* My thesis development is featured as a key future direction in the project presented at the #link("https://riscv-europe.org/summit/2025/media/proceedings/2025-05-14-RISC-V-Summit-Europe-P1.1.12-MERCOGLIANO-poster.pdf")[RISC-V Summit Europe 2025].
+- Relevant coursework: Advanced Computer Architectures and GPU Programming, Real-Time Industrial Systems, Embedded Systems, Network Security, Software Security, Web and Real-Time Communication Systems.
 
 #edu(
   institution: "University of Naples Federico II",
   location: "Naples, IT",
   dates: dates-helper(start-date: "Sept 2016", end-date: "Nov 2022"),
-  degree: "Bachelor of Science, Computer Engineering",
-
-  // Uncomment the line below if you want edu formatting to be consistent with everything else
-  // consistent: true
+  degree: "Bachelor of Science, Computer Engineering (Score 103/110)",
 )
-- Cumulative GPA: 3.5/4.0 | Thesis: Performance Evaluation of Priority-Based Scheduling Algorithms.
-- Relevant coursework: Computer Architectures, Operating Systems, Real-Time Systems, Artificial Intelligence, Advanced Calculus, Linear Algebra.
+- Thesis: Performance Evaluation of Priority-Based Scheduling Algorithms.
+- Relevant coursework: Computer Architectures, Operating Systems, Real-Time Systems, Artificial Intelligence, Advanced Calculus
+
+== Publications
+
+- *Shadowfax: Enforcing Confidential Virtualization via an open TEE Security Manager* G. Capasso, S. Mercogliano, N. d'Ambrosio, S.P. Romano, A. Cilardo (In preparation, preprint forthcoming).
+- *A Systematic Threat Modeling Methodology for Confidential Computing Architectures: a Case Study on RISC-V CoVE* G. Capasso, A. Cilardo, N. d'Ambrosio, S. P. Romano, L. Russo (In preparation).
+
+== Teaching & Academic Activities
+
+- *Seminar:* "Rust for Embedded Systems" at the Graduate Embedded Systems course (Prof. Alessandro Cilardo), University of Naples Federico II. #link("https://github.com/alarmfox/rust4embedded")[Material & Code].
+- *Teaching Assistant (Tutor):* Led tutorials and practical sessions for undergraduate courses in Calculus I and Geometry.
 
 == Work Experience
 #work(
-  title: "Research Intern",
+  title: "Research Intern, Project: SensAI4PRO",
   company: "University of Sannio",
-  location: "Naples, IT",
-  dates: dates-helper(start-date: "July 2025", end-date: "Current"),
+  location: "Benevento, IT",
+  dates: dates-helper(start-date: "Oct 2025", end-date: "Mar 2025"),
 )
-- *Confidential Computing on RISC-V.* developed a secure firmware and a trusted hypervisor implementing virtual-machine based Confidential Computing for RISC-V application-class processors.
-- *Security Test and platform automation.* Built an test infrastructure using QEMU and Python GDB to simulate attack scenarios from attack graphs. Integrated with CI/CD.
-- *Contribution to Simply-V.* Integrated OpenSBI and FreeRTOS on a RISC-V based soft SoC for Xilinx FPGAs. Contributed to build system architecture and atomics testing.
+- *Confidential Computing on RISC-V.* developed a secure firmware and a trusted hypervisor implementing VM-based Confidential Computing for RISC-V application-class processors.
+- *Security Test and platform automation.* Built a test infrastructure using QEMU and Python GDB to simulate attack scenarios from attack graphs.
+- *Contribution to Simply-V.* Integrated OpenSBI, FreeRTOS and Linux on RISC-V-based soft SoC for Xilinx FPGAs. Contributed to build system architecture and atomics testing.
+ (#link("https://github.com/HiSA-Team/Simply-V/pull/176")[\#176],#link("https://github.com/HiSA-Team/Simply-V/pull/182")[\#182],#link("https://github.com/HiSA-Team/Simply-V/pull/190")[\#190])
 
 #work(
-  title: "Mentor @Cisco DTLab",
+  title: "Instructor & Mentor @Cisco DTLab",
   location: "Naples, IT",
-  company: "Clara Consortium/Cisco",
-  dates: dates-helper(start-date: "Mar 2021", end-date: "Sep 2025"),
+  company: "Clara Consortium",
+  dates: dates-helper(start-date: "Mar 2021", end-date: "Apr 2026"),
 )
-- *Designed and delivered interactive workshops (DevOps & Cybersecurity).* Created training content and hands-on exercises to build operational skills in CI/CD, automation, and application security practices.
+- *Designed and delivered interactive workshops (CCNA, DevOps and Cybersecurity).* Created training content and hands-on exercises to build operational skills in CI/CD, automation, and application security practices.
 - *Managed laboratory infrastructure and services.* Provisioned, maintained, and supported lab environments to ensure availability, isolation, and accessibility for practical exercises and testing.
 - *Coordinated industry-student final projects.* Served as liaison between corporate partners and student teams; supported requirements definition, solution validation, and assessment.
-- *Led specialist sessions.* Ran practical workshops on web development, REST API design, software security, and container technologies with an emphasis on hands-on learning and best practices.
-
-#work(
-  title: "Specialist @The Big Hack",
-  location: "Apple Developer Academy, Naples, IT",
-  company: "Clara Consortium/Cisco",
-  dates: dates-helper(start-date: "Jun 28, 2025", end-date: "Jun 29, 2025"),
-)
-- Provided technical support to teams adopting Cisco solutions, including debugging, best practices, and optimization guidance.
-- Contributed to the jury’s decision-making process by evaluating proposed solutions on technical feasibility and innovation.
+- *Led focused sessions.* Ran practical workshops on web development, REST API design, software security, and container technologies with an emphasis on hands-on learning and best practices.
+- *Hackathon Support.* Provided technical support during events such as The Big Hack at Apple Developer Academy, including debugging, best practices, optimization guidance, and solution evaluation.
 
 #work(
   title: "Software Engineer",
@@ -104,10 +104,9 @@
   company: "Gematica SRL",
   dates: dates-helper(start-date: "Jan 2021", end-date: "Dec 2022"),
 )
-- *Built an air-quality monitoring platform.* Developed an IoT solution using LoRaWAN sensors, a WeatherLink station and custom embedded systems; operated gateways, normalized data, created dashboards and alerts for stakeholders.
+- *Built an air-quality monitoring platform.* Developed an IoT solution using LoRaWAN sensors, a WeatherLink station, and custom embedded systems; operated gateways, normalized data, created dashboards and alerts for stakeholders.
 - *Engineered automation for smart gates.* Created the control architecture for metro network gates, integrating smart validators and supervising differential circuit breakers via Modbus TCP for monitoring and safety.
 - *Developed a Wi-Fi traffic and passenger-flow analytics app.* Processed SNMP traps from Cisco WLCs to extract passenger-flow insights and support operational planning.
-- *Administered Cisco networks and access.* Managed LAN infrastructure, applied WPA2-Enterprise policies, integrated Active Directory for authentication, and implemented a guest portal via PacketFence.
 
 #work(
   title: "Software Developer",
@@ -117,8 +116,8 @@
 )
 - *Multi-platform development (.NET / ASP.NET Core / Xamarin).* Built desktop applications with the .NET Framework, web services with ASP.NET Core, and cross-platform mobile apps with Xamarin. Containerized and deployed services using Docker.
 - *Created a license-management system.* Implemented key issuance, expiration tracking, and reporting with a focus on security and traceability.
-- *Implemented warehouse management with barcode integration.*  Built an android application for dedicated devices for goods intake and shipment, improving logistics efficiency.
-- *Integrated digital signatures (Aruba, smartcard).* Automated PDF signing workflows using smartcards and managed certificate-based authentication for compliant archiving.
+- *Implemented warehouse management with barcode integration.*  Built an Android application for dedicated devices for goods intake and shipment, improving logistics efficiency.
+- *Integrated digital signatures (Aruba, smart card).* Automated PDF signing workflows using smartcards and managed certificate-based authentication for compliant archiving.
 
 == Projects
 
@@ -139,18 +138,18 @@
   name: "Enclave benchmark",
   url: "github.com/alarmfox/enclave-benchmark"
 )
-- Built a Rust CLI tool to benchmark Trusted Execution Environments (TEE) on Intel SGX using Gramine.
-- For each workload the tool creates an enclave and collects metrics (instructions, energy, I/O) using _perf_, Linux _eBPF_, and _Intel RAPL_.
-- Supports a in-depth tracing mode which traces all memory accesses and allocations.
-- Analyzes disk I/O access random and sequential patterns using an eBPF program.
+- Developed a Rust-based CLI benchmarking tool for evaluating Trusted Execution Environments (TEE) on Intel SGX using Gramine.
+- Performed fine-grained performance analysis by measuring instructions, energy consumption, and I/O using perf, Linux eBPF, and Intel RAPL across diverse workloads.
+- Enabled deep tracing and I/O characterization, analyzing random vs. sequential disk I/O patterns.
 
 #project(
-  name: "xrpc",
-  url: "github.com/alarmfox/xrpc"
+  name: "Criticality-Aware Kubernetes",
+  url: "github.com/alarmfox/criticality-aware-kubernetes"
 )
-- _xrpc_, a lightweight C library for distributed mathematical computation.
-- Designed a compact binary protocol for batch transmission of *multidimensional* data.
-- Implemented reference counting and connection pooling with cache-line alignment using lock-free primitives.
+- Evaluated Kubernetes for soft real-time workloads by analyzing pod startup latency and identifying bottlenecks within the Kubelet and Container Runtime Interface (CRI).
+- Characterized end-to-end latency across varied Linux kernel configurations, demonstrating significant jitter reduction using SCHED_FIFO real-time scheduling and hardware-level CPU isolation (isolcpus).
+- Applied Extreme Value Theory (EVT) to model tail behavior in startup distributions, estimating probabilistic Worst-Case Execution Time (WCET) using Generalized Extreme Value (GEV) fits.
+- Designed a theoretical mixed-criticality framework for worker nodes, incorporating Fixed Window rate-limiting and Deferrable Server scheduling to provide deterministic execution guarantees.
 
 #project(
   name: "RT-Jam",
@@ -161,11 +160,32 @@
 - Added authentication and email verification to secure user access.
 
 #project(
+  name: "uav",
+  url: "github.com/alarmfox/uav"
+)
+- A simple antivirus program for Linux systems written in C.
+- Supports rootless container-like sandbox mode for untrusted program execution and dynamic malware analysis.
+- Kernel-based interaction with Netlink API and eBPF for security and metrics collection.
+
+#project(
+  name: "xrpc",
+  url: "github.com/alarmfox/xrpc"
+)
+- _xrpc_, a lightweight C library for distributed mathematical computation.
+- Designed a compact binary protocol for batch transmission of *multidimensional* data.
+- Implemented reference counting and connection pooling with cache-line alignment using lock-free primitives.
+
+#project(
   name: "IPSec Fuzzing",
   url: "github.com/alarmfox/ipsec-fuzzing"
 )
 - Employed *Syzkaller* to fuzz the Linux IPsec implementation via Netlink and XFRM API, targeting stateful protocol vulnerabilities.
 - Created *pseudo-syscalls* to initialize kernel structures and enable coverage-guided fuzzing for complex interactions.
+
+== Open Source Contributions
+
+- *argon2-cffi*: Added support for wasm32 to the package for the Pyodide WASM engine. (#link("https://github.com/hynek/argon2-cffi/pull/190")[\#190], #link("https://github.com/pyodide/pyodide/pull/5281")[\#5281])
+- *Void Linux Packages*: Fixed a bug in the `network-manager-l2tp` package within the Void Linux repository. (#link("https://github.com/oSoWoSo/VUR/commit/51ace95ed4a48908457dd10bb7f6940801b304d3")[\#51ace95])
 
 == Extracurricular Activities
 
@@ -173,8 +193,8 @@
   activity: "Leonardo Summer Course",
   dates: dates-helper(start-date: "Jun 2024", end-date: "Jul 2024"),
 )
-- *Cloud Security* Infrastructure security concepts focusing Azure cloud solutions and automation strategies using Bicep and Terraform.
-- *Vulnerability Assessment and Penetration Testing* Hands on activities with Leonardo's Red Team on both Linux and Windows systems using Qualys, metasploit.
+- *Cloud Security* Infrastructure security concepts focusing on Azure cloud solutions and automation strategies using Bicep and Terraform.
+- *Vulnerability Assessment and Penetration Testing* Hands-on activities with Leonardo's Red Team on both Linux and Windows systems using Qualys, Metasploit.
 - *Cyber Resilience Architectures*: Hazard analysis and risk analysis methodologies on supply chain scenarios.
 
 #certificates(
@@ -191,7 +211,6 @@
   dates: dates-helper(start-date: "Feb 2019", end-date: "Jul 2019"),
 )
 - Achieved *CCENT* (Cisco Certified Entry Networking Technician) and *PCAP* (Python Certified Associate) certifications.
-- Completed a final project with the Italian Leather Research Institute, developing a remote collaboration system that integrated augmented reality features into Cisco Webex.
 
 // == Skills
 // - *Programming Languages*: JavaScript, Python, C/C++, HTML/CSS, Java, Bash, R, Flutter, Dart
