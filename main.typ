@@ -66,8 +66,8 @@
 
 == Publications
 
-- *Shadowfax: Enforcing Confidential Virtualization via an open TEE Security Manager* G. Capasso, S. Mercogliano, N. d'Ambrosio, S.P. Romano, A. Cilardo (In preparation, preprint forthcoming).
-- *A Systematic Threat Modeling Methodology for Confidential Computing Architectures: a Case Study on RISC-V CoVE* G. Capasso, A. Cilardo, N. d'Ambrosio, S. P. Romano, L. Russo (In preparation).
+- Capasso, Giuseppe and Mercogliano, Stefano and d’Ambrosio, Nicola and Romano, Simon Pietro and Cilardo, Alessandro, Shadowfax: Enforcing Confidential Virtualization via an open TEE Security Manager (January 31, 2026). Available at SSRN: https://ssrn.com/abstract=6717198
+- Capasso, Giuseppe and Cilardo, Alessandro and Romano, Simon Pietro and Russo, Lavinia, A Systematic Threat Modeling Methodology for Confidential Computing Architectures: a Case Study on RISC-V CoVE. Available at SSRN: https://ssrn.com/abstract=6767055 or http://dx.doi.org/10.2139/ssrn.6767055
 
 == Teaching & Academic Activities
 
@@ -79,7 +79,7 @@
   title: "Research Intern, Project: SensAI4PRO",
   company: "University of Sannio",
   location: "Benevento, IT",
-  dates: dates-helper(start-date: "Oct 2025", end-date: "Mar 2025"),
+  dates: dates-helper(start-date: "Oct 2025", end-date: "Mar 2026"),
 )
 - *Confidential Computing on RISC-V.* developed a secure firmware and a trusted hypervisor implementing VM-based Confidential Computing for RISC-V application-class processors.
 - *Security Test and platform automation.* Built a test infrastructure using QEMU and Python GDB to simulate attack scenarios from attack graphs.
