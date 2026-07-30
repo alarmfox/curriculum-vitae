@@ -104,7 +104,6 @@ release_args=(
   --target "$head_sha"
   --title "$tag"
   --generate-notes
-  --fail-on-no-commits
 )
 
 if [[ "$draft" == true ]]; then
