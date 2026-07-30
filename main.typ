@@ -76,6 +76,14 @@
 
 == Work Experience
 #work(
+  title: "Energy-aware scheduling and virtualization under real-time constraints",
+  company: "Scuola Superiore Sant'Anna",
+  location: "Pisa, IT",
+  dates: dates-helper(start-date: "Jun 2026", end-date: "Oct 2026"),
+)
+- *AMD AI-Engine Virtualization* worked on AMD Versal VEK-280 and VCK-190 2D-Tile VLIW processors virtualization, enabling partition support inside the Linux Kernel
+
+#work(
   title: "Research Intern, Project: SensAI4PRO",
   company: "University of Sannio",
   location: "Benevento, IT",
