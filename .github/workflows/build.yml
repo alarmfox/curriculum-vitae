@@ -4,7 +4,7 @@ on:
     branches:
       - master
     paths:
-      - main.typ 
+      - main.typ
 
 permissions:
   contents: write
@@ -18,13 +18,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-       
+
       - name: Install Typst
         run: |
           wget https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz
           tar -xf typst-x86_64-unknown-linux-musl.tar.xz
           sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
-          
+
       - name: Build Typst
         run: |
           mkdir -p build
@@ -34,6 +34,7 @@ jobs:
         run: |
           mkdir -p assets
           cp main.pdf ./assets/
+          mv ./assets/main.pdf ./assets/cv-capasso-giuseppe.pdf
 
       - name: semver
         uses: anitvam/conventionalcommit-semantic-releasing@v0.7.26
